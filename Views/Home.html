@@ -1,24 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <h1>Delphian Logic In Action</h1>
-    <title>Document</title>
+    <title>DelphianLogic</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <div id="divFullBody">
-        <div id="divTabs">
-            <ul>
-                <li>learning</li>
-                <li>Technology</li>
-                <li>Communication</li>
-            </ul>
+        <div id="divHeaderBody">
+            <header id="tagHeader">Delphian Logic In Action</header>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sapiente </p>
         </div>
-        <div id="divImageSlider">
-            <ul>
-                <li>image1</li>
-                <li>image2</li>
-                <li>image3</li>
-            </ul>
+        <div id="divItemBody">
+            <div id="divTabs" class="clsTabGroups">
+                <ul>
+                    <div id="divMenuItems">
+                        <li id="divLearning" class="clsMenuTabs" attr_index="1">
+                            <div class="clsMenuIcons">
+                                <img src="../Assets/DL-learning.svg" >
+                            </div>
+                            <div class="clsMenuText">
+                                <p>Learning</p>
+                            </div>
+                            <div class="clsTabActive clsActiveMenu"></div>
+                        </li>
+                        <li id="divTechnology" class="clsMenuTabs" attr_index="2">
+                            <div class="clsMenuIcons">
+                                <img src="../Assets/DL-technology.svg" >
+                            </div>
+                            <div class="clsMenuText">
+                                <p>Technology</p>
+                            </div>
+                            <div class="clsTabActive "></div>
+                        </li>
+                        <li id="divCommunication" class="clsMenuTabs" attr_index="3">
+                            <div class="clsMenuIcons">
+                                <img src="../Assets/DL-communication.svg" >
+                            </div>
+                            <div class="clsMenuText">
+                                <p>Communication</p>
+                            </div>
+                            <div class="clsTabActive "></div>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+            <div id="divImageSlider" class="clsTabGroups">
+                <div id="divImageHeader">
+                    <span>DIGITAL LEARNING INFRASTRUCTURE</span>
+                </div>
+                <div id="divImageDescription">
+                    <a>
+                        Usability enhancement and Training for Transaction Portal for Customers
+                    </a>
+                </div>
+                <div id="divLearn">
+                    <a>Learn More </a>
+                    <img src="../Assets/arrow-right.svg" alt="">
+                </div>
+                <div id="divPagination">
+                    <span id="spnPagination1" attr_id = "1" attr_category="Learning" class="clsPagination active"></span>
+                    <span id="spnPagination2" attr_id = "2" attr_category="Learning" class="clsPagination"></span>
+                    <span id="spnPagination3" attr_id = "3" attr_category="Learning" class="clsPagination"></span>
+                </div>
+            </div>
+            <div id="divImageConnected" class="clsTabGroups">
+                <img src="../Assets/DL-Learning-1.jpg" alt="">
+            </div>
         </div>
     </div>
 </body>

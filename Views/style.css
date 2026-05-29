@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+body{
+    background: #11324d;
+    font-family: sans-serif;
+    font-size: 0px;
+}
+#divFullBody{
+    width: 100%;
+    height: 100%;
+    background: #11324d;
+}
+
+#divHeaderBody{
+    text-align: center;
+    color: white;
+    padding: 60px 0 40px 0;
+}
+#tagHeader{
+    font-size: 40px;
+}
+#divHeaderBody p{
+    padding: 10px;
+    color: #f6f6f6;
+    font-size: 20px;
+}
+
+#divItemBody{
+    margin: 0 8% 0 8%;
+    height: 450px;
+}
+
+.clsTabGroups{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 18px;
+    height: 100%;
+}
+
+#divTabs{
+    background: white;
+    width: 25%;
+    height: 100%;
+}
+
+.clsMenuTabs{
+    list-style-type: none;
+    color: #11324d;
+    background: white;
+    margin: 15% 5% ;
+    font-size: 20px;
+    font-weight: 500;
+    height: 80px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.15);
+
+    display: flex;
+    align-items: center;
+}
+.clsMenuIcons{
+    width: 30%;
+    text-align: center;
+}
+.clsMenuIcons img{
+    width: 50px;
+}
+.clsMenuText{
+    width: 75%;
+}
+
+#divImageSlider{
+    width: 37%;
+    background: #64b4c8;
+    text-align: center;
+    color: white;
+    padding-top: 5%;
+}
+
+#divImageHeader span{
+    font-size: 13px;
+    background: #26444b47;
+    padding: 8px;
+    border-radius: 5px;
+}
+#divImageDescription{
+    margin: 5% 10%;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 130%;
+}
+#divLearn{
+    font-size: 20px;
+    padding: 8px;
+    display: inline-block;
+}
+#divLearn img{
+    display: inline-block;
+    vertical-align: middle;
+    filter: brightness(0) invert(1);
+}
+
+#divPagination{
+    padding: 20% 0 5% 0;
+}
+.clsPagination{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: 0 6px;
+}
+.clsPagination.active{
+    background: white;
+}
+
+#divImageConnected{
+    width: 38%;
+    overflow: hidden;
+}
+
+#divImageConnected img{
+    width: 100%;
+    height: 100%;
+}
+
+.clsActiveMenu{
+    position: relative;
+    left: 5.5%;
+    font-size: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-right: 12px solid #64b4c8;
+}
