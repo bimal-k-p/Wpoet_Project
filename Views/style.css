@@ -77,6 +77,10 @@ body{
     text-align: center;
     color: white;
     padding-top: 5%;
+    position: relative;
+}
+#divOverlay{
+    display: none;
 }
 
 #divImageHeader span{
@@ -91,12 +95,12 @@ body{
     font-weight: 400;
     line-height: 130%;
 }
-#divLearn{
+#divLearnMore{
     font-size: 20px;
     padding: 8px;
     display: inline-block;
 }
-#divLearn img{
+#divLearnMore img{
     display: inline-block;
     vertical-align: middle;
     filter: brightness(0) invert(1);
@@ -104,6 +108,10 @@ body{
 
 #divPagination{
     padding: 20% 0 5% 0;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
 }
 .clsPagination{
     display: inline-block;
@@ -134,4 +142,70 @@ body{
     border-top: 12px solid transparent;
     border-bottom: 12px solid transparent;
     border-right: 12px solid #64b4c8;
+}
+
+.clsMenuShowHide{
+   padding: 10px;
+   display: none;
+}
+
+@media screen and (max-width:768px){
+
+    #divTabs{
+        background: none;
+        width: 100%;
+        height: 70%;
+    }
+    .clsMenuTabs{
+        margin: 3%;
+        border-radius: 5px;
+    }
+
+    #divItemBody{
+        margin: 0;
+    }
+    .clsMenuShowHide{
+        padding: 10px;
+        display: block;
+    }
+    .clsActiveMenu{
+        left: -34%;
+        top: 61%;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 20px solid #64b4c8;
+    }
+    #divImageConnected{
+        display: none;
+    }
+    #divImageSlider{
+        width: 94%;
+        height: 400px;
+        margin: 3%;
+        border-radius: 5px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #divImageHeader,
+    #divImageDescription,
+    #divLearnMore{
+        position: relative;
+        z-index: 2;
+    }
+    #divPagination{
+        z-index: 3;
+    }
+    #divOverlay{
+        display: block;
+        background: #64b4c8;
+        width: 100%;
+        height: 100%;
+        opacity: 80%;
+        position: absolute;
+        top: 0%;
+        z-index: 1;
+        border-radius: 5px;
+    }
+
 }
